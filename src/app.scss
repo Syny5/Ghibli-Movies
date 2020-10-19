@@ -1,0 +1,116 @@
+body {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    padding-left: 10%;
+    padding-right: 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #08080a;
+    font-family: "Balsamiq Sans", cursive;
+    color: #7aa5a3;
+}
+
+h1 {
+    text-transform: uppercase;
+    font-size: 4em;
+    font-family: "Indie Flower", cursive;
+    text-align: center;
+}
+
+h2{
+    color: #efefef;
+    font-size: 2em;
+    margin: 2px 0px;
+    display: inline;
+}
+
+p{
+    margin: 10px 0px;
+}
+
+a{
+    color: #efefef;
+    text-decoration: none;
+}
+a:hover{
+    color:  #7aa5a3;
+}
+
+img{
+    width: 500px;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.flex-center{
+    display: flex;
+    justify-content: center;
+}
+
+.intro{
+    text-align: center;
+    margin-bottom: 50px;
+}
+.info{
+    text-align: center;
+}
+
+.movieCards {
+    background-color: #1b2323;
+    padding: 20px 40px;
+    border-radius: 35px;
+    margin: 10px 0px;
+    cursor: pointer;
+}
+
+.description{
+    color: #efefef;
+}
+
+.producerDirector{
+    color: #b5bcbc;
+}
+
+.likedMovie{
+    background-color: #efefef;
+}
+
+.likedMovie h2{
+    color: #08080a;
+}
+
+.likedMovie .producerDirector{
+    color: #333a3a;
+}
+
+.likedMovie .description{
+    color: #08080a;
+}
+
+.likedMovie .date{
+    color: #567573;
+}
+
+.date{
+    margin-left: 10px;
+}
+
+@media(max-width: 900px){
+    body{
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+    h1{
+        font-size: 2em;
+    }
+    h2{
+        font-size: 1.5em;
+    }
+}
+
+@media(max-width: 520px){
+    img{
+        width: 95%;
+    }
+}

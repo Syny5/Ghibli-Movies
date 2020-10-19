@@ -3,11 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Studio Ghibli Movies</title>
+    <link rel="stylesheet" href="./dist/app.css">
 </head>
 <body>
+    <h1>Studio Ghibli Movies</h1>
+    <div class="flex-center">
+        <img src="./img/mon-voisin-totoro-ghibli.jpg" alt="Ghibli mon voisin totoro">
+    </div>
+    <p class="intro">From <a href="https://ghibliapi.herokuapp.com/">Studio Ghibli API Rest</a></p>
+    <p class="info">Click on the movies you wish to watch</p>
     <div id="app">
-        <example></example>
+        <div v-for="post in posts">
+            <ghibli :post="post"></ghibli>
+        </div>
     </div>
     <script src="./dist/app.js"></script>
 </body>
